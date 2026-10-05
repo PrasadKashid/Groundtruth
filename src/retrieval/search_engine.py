@@ -11,7 +11,7 @@ CROSS_ENCODER = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 
 class RetrievalEngine:
     def __init__(self, chunks_path: str):
-        # Loading the chunks 
+        # Loading the chunks
         print(f"Loading chunks from {chunks_path}...")
         self.chunks: List[Dict] = []
         with open(chunks_path, "r", encoding="utf-8") as f:
@@ -20,6 +20,7 @@ class RetrievalEngine:
                     self.chunks.append(json.loads(line))
         self.chunk_ids = [c["chunk_id"] for c in self.chunks]
         self.corpus_text = [c["text"] for c in self.chunks]
+        self.chunk_map = {c["chunk_id"]: c["text"] for c in self.chunks}
         print(f"Loaded {len(self.chunks)} chunks")
 
         # 1. initializing Dense Embeddings Model & FAISS
@@ -90,9 +91,9 @@ class RetrievalEngine:
         sorted_chunks = sorted(
             rrf_scores.items(), key=lambda item: item[1], reverse=True
         )
-      
+
         return [chunk_id for chunk_id, _ in sorted_chunks[:top_k]]
-    
+
     # Pipeline C: Hybrid + Cross-Encoder Reranker
     def search_reranked(
         self, query: str, top_k: int = 10, initial_k: int = 25
@@ -105,7 +106,7 @@ class RetrievalEngine:
         # 1. Candidate Generation
         candidate_ids = self.search_hybrid(query, top_k=initial_k)
         candidate_texts = [
-            self.chunks[self.chunk_ids.index(cid)]["text"] for cid in candidate_ids
+            self.chunk_map[cid] for cid in candidate_ids if cid in self.chunk_map
         ]
 
         # 2. Pairwise Scoring
