@@ -1,18 +1,12 @@
-{"query": "What risks does the company face regarding Taiwan Semiconductor Manufacturing Company (TSMC)?", "expected_chunk_ids": ["nvda_10k_chunk_0018"], "category": "risk_factors"}
-{"query": "How do United States export controls impact international chip sales and revenue?", "expected_chunk_ids": ["nvda_10k_chunk_0045"], "category": "risk_factors"}
-{"query": "What cybersecurity or intellectual property infringement risks are disclosed?", "expected_chunk_ids": ["nvda_10k_chunk_0002"], "category": "risk_factors"}
-{"query": "What supply chain concentration vulnerabilities are detailed in the filing?", "expected_chunk_ids": ["nvda_10k_chunk_0036"], "category": "risk_factors"}
-{"query": "What was the total revenue reported for the most recent fiscal year?", "expected_chunk_ids": ["nvda_10k_chunk_0017"], "category": "revenue_financials"}
-{"query": "What was the annual revenue growth rate for the Data Center segment?", "expected_chunk_ids": ["nvda_10k_chunk_0017"], "category": "revenue_financials"}
-{"query": "What was the reported gross margin percentage for the fiscal year?", "expected_chunk_ids": ["nvda_10k_chunk_0094"], "category": "revenue_financials"}
-{"query": "How much did research and development expenses increase year over year?", "expected_chunk_ids": ["nvda_10k_chunk_0032"], "category": "revenue_financials"}
-{"query": "What was the operating income performance compared to the prior period?", "expected_chunk_ids": ["nvda_10k_chunk_0094"], "category": "revenue_financials"}
-{"query": "Under which state laws is NVIDIA Corporation incorporated?", "expected_chunk_ids": ["nvda_10k_chunk_0009"], "category": "corporate_governance"}
-{"query": "How many shares of common stock were outstanding as of the reporting date?", "expected_chunk_ids": ["nvda_10k_chunk_0002"], "category": "corporate_governance"}
-{"query": "What is the aggregate market value of voting stock held by non-affiliates?", "expected_chunk_ids": ["nvda_10k_chunk_0001"], "category": "corporate_governance"}
-{"query": "Which independent registered public accounting firm audits the financial statements?", "expected_chunk_ids": ["nvda_10k_chunk_0001"], "category": "corporate_governance"}
-{"query": "Where is the disclosure discussing: 'nvda-20260125 Table of Contents UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C.'?", "expected_chunk_ids": ["nvda_10k_chunk_0000"], "category": "corpus_coverage"}
-{"query": "Where is the disclosure discussing: 'Item 10. Directors, Executive Officers and Corporate Governance 46 Item 11. Executive'?", "expected_chunk_ids": ["nvda_10k_chunk_0003"], "category": "corpus_coverage"}
-{"query": "Where is the disclosure discussing: 'to our management. In some cases, you can identify forward-looking statements by'?", "expected_chunk_ids": ["nvda_10k_chunk_0004"], "category": "corpus_coverage"}
-{"query": "Where is the disclosure discussing: 'have conducted an exhaustive inquiry into, or review of, all potentially available'?", "expected_chunk_ids": ["nvda_10k_chunk_0005"], "category": "corpus_coverage"}
-{"query": "Where is the disclosure discussing: 'serve as the brain of computers, robots, and self-driving cars that can'?", "expected_chunk_ids": ["nvda_10k_chunk_0006"], "category": "corpus_coverage"}
+{"query": "Where does NVIDIA state that its supply chain is concentrated in Asia?", "expected_chunk_ids": ["nvda_10k_chunk_0018"], "category": "supply_chain"}
+{"query": "What risks are detailed regarding component shortages and delays in product shipments from suppliers?", "expected_chunk_ids": ["nvda_10k_chunk_0041"], "category": "supply_chain"}
+{"query": "How is Gross Profit and Gross Margin calculated relative to cost of semiconductors and packaging?", "expected_chunk_ids": ["nvda_10k_chunk_0102"], "category": "revenue_financials"}
+{"query": "What drove Gaming revenue growth in fiscal year 2026 and what was the impact of Blackwell demand?", "expected_chunk_ids": ["nvda_10k_chunk_0095"], "category": "revenue_financials"}
+{"query": "Where does NVIDIA discuss customer concentration among CSPs, AI model makers, and direct versus indirect customers?", "expected_chunk_ids": ["nvda_10k_chunk_0101"], "category": "revenue_financials"}
+{"query": "Which segment demand drove revenue increases between fiscal year 2026 and 2025 regarding Compute & Networking?", "expected_chunk_ids": ["nvda_10k_chunk_0162"], "category": "revenue_financials"}
+{"query": "What risks are disclosed regarding international sales and impairment charges in investments?", "expected_chunk_ids": ["nvda_10k_chunk_0045"], "category": "risk_factors"}
+{"query": "What manufacturing risks are highlighted regarding long lead times and uncertain capacity?", "expected_chunk_ids": ["nvda_10k_chunk_0029"], "category": "risk_factors"}
+{"query": "Where does the report reference Note 17 and Note 12 for Legal Proceedings incorporated by reference?", "expected_chunk_ids": ["nvda_10k_chunk_0088"], "category": "corporate_governance"}
+{"query": "Where is the report table of contents and Item 7 Management's Discussion and Analysis index located?", "expected_chunk_ids": ["nvda_10k_chunk_0091"], "category": "corporate_governance"}
+{"query": "Where are creative and engineering GPU use cases such as visual effects in movies described?", "expected_chunk_ids": ["nvda_10k_chunk_0009"], "category": "corpus_coverage"}
+{"query": "Where does the filing discuss developer programs and marketing personnel engaging with software developers?", "expected_chunk_ids": ["nvda_10k_chunk_0017"], "category": "corpus_coverage"}
