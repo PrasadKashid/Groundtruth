@@ -1,0 +1,38 @@
+name: Retrieval Quality Regression Gates
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test-and-eval:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install pytest numpy sentence-transformers rank-bm25 faiss-cpu
+
+      - name: Verify Evaluation Summary Exists
+        run: |
+          if [ ! -f data/results/evaluation_summary.json ]; then
+            echo "Running evaluation to generate summary..."
+            python -m src.eval.run_eval
+          fi
+
+      - name: Run Pytest Regression Suite
+        run: |
+          python -m pytest -v
