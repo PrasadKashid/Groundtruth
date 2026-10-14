@@ -10,10 +10,6 @@ __pycache__/
 .pytest_cache/
 
 # Data artifacts & model weights
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
 models/
 *.faiss
 *.index

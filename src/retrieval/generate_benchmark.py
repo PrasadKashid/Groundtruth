@@ -2,7 +2,8 @@ import os
 import json
 
 CHUNKS_FILE = os.path.join("data", "processed", "chunks.jsonl")
-BENCHMARK_FILE = os.path.join("data", "processed", "ground_truth.jsonl")
+BENCHMARK_FILE = os.path.join("data", "benchmark", "ground_truth.jsonl")
+
 
 def load_chunks(filepath):
     chunks = []

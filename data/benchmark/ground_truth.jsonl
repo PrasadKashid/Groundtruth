@@ -1,0 +1,18 @@
+{"query": "What risks does the company face regarding Taiwan Semiconductor Manufacturing Company (TSMC)?", "expected_chunk_ids": ["nvda_10k_chunk_0018"], "category": "risk_factors"}
+{"query": "How do United States export controls impact international chip sales and revenue?", "expected_chunk_ids": ["nvda_10k_chunk_0045"], "category": "risk_factors"}
+{"query": "What cybersecurity or intellectual property infringement risks are disclosed?", "expected_chunk_ids": ["nvda_10k_chunk_0002"], "category": "risk_factors"}
+{"query": "What supply chain concentration vulnerabilities are detailed in the filing?", "expected_chunk_ids": ["nvda_10k_chunk_0036"], "category": "risk_factors"}
+{"query": "What was the total revenue reported for the most recent fiscal year?", "expected_chunk_ids": ["nvda_10k_chunk_0017"], "category": "revenue_financials"}
+{"query": "What was the annual revenue growth rate for the Data Center segment?", "expected_chunk_ids": ["nvda_10k_chunk_0017"], "category": "revenue_financials"}
+{"query": "What was the reported gross margin percentage for the fiscal year?", "expected_chunk_ids": ["nvda_10k_chunk_0094"], "category": "revenue_financials"}
+{"query": "How much did research and development expenses increase year over year?", "expected_chunk_ids": ["nvda_10k_chunk_0032"], "category": "revenue_financials"}
+{"query": "What was the operating income performance compared to the prior period?", "expected_chunk_ids": ["nvda_10k_chunk_0094"], "category": "revenue_financials"}
+{"query": "Under which state laws is NVIDIA Corporation incorporated?", "expected_chunk_ids": ["nvda_10k_chunk_0009"], "category": "corporate_governance"}
+{"query": "How many shares of common stock were outstanding as of the reporting date?", "expected_chunk_ids": ["nvda_10k_chunk_0002"], "category": "corporate_governance"}
+{"query": "What is the aggregate market value of voting stock held by non-affiliates?", "expected_chunk_ids": ["nvda_10k_chunk_0001"], "category": "corporate_governance"}
+{"query": "Which independent registered public accounting firm audits the financial statements?", "expected_chunk_ids": ["nvda_10k_chunk_0001"], "category": "corporate_governance"}
+{"query": "Where is the disclosure discussing: 'nvda-20260125 Table of Contents UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C.'?", "expected_chunk_ids": ["nvda_10k_chunk_0000"], "category": "corpus_coverage"}
+{"query": "Where is the disclosure discussing: 'Item 10. Directors, Executive Officers and Corporate Governance 46 Item 11. Executive'?", "expected_chunk_ids": ["nvda_10k_chunk_0003"], "category": "corpus_coverage"}
+{"query": "Where is the disclosure discussing: 'to our management. In some cases, you can identify forward-looking statements by'?", "expected_chunk_ids": ["nvda_10k_chunk_0004"], "category": "corpus_coverage"}
+{"query": "Where is the disclosure discussing: 'have conducted an exhaustive inquiry into, or review of, all potentially available'?", "expected_chunk_ids": ["nvda_10k_chunk_0005"], "category": "corpus_coverage"}
+{"query": "Where is the disclosure discussing: 'serve as the brain of computers, robots, and self-driving cars that can'?", "expected_chunk_ids": ["nvda_10k_chunk_0006"], "category": "corpus_coverage"}
